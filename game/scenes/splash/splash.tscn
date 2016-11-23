@@ -29,4 +29,23 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="progress" type="ProgressBar" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 326.0
+margin/top = 307.0
+margin/right = 492.0
+margin/bottom = 323.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+percent/visible = true
+
 
