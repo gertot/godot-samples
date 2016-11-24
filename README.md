@@ -5,3 +5,4 @@ This sample contains:
 * splash screen with preloading
 * menu screen with buttons and custom theme
 * internationalisation of labels and buttons
+* levelmenu with tilemap
