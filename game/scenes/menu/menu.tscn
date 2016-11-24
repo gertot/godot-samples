@@ -10,10 +10,10 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 theme/theme = ExtResource( 1 )
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 800.0
-margin/bottom = 480.0
+margin/left = 1.0
+margin/top = -3.0
+margin/right = 801.0
+margin/bottom = 477.0
 script/script = ExtResource( 2 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -24,9 +24,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 300.0
+margin/left = 299.0
 margin/top = 150.0
-margin/right = 300.0
+margin/right = 301.0
 margin/bottom = 150.0
 custom_constants/separation = 10
 alignment = 0
@@ -40,11 +40,11 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
 margin/right = 200.0
-margin/bottom = 34.0
+margin/bottom = 42.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Button 1"
+text = "BUTTON1"
 flat = false
 
 [node name="button2" type="Button" parent="VBoxContainer"]
@@ -54,13 +54,13 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 44.0
+margin/top = 52.0
 margin/right = 200.0
-margin/bottom = 78.0
+margin/bottom = 94.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Button 2"
+text = "BUTTON2"
 flat = false
 
 [connection signal="pressed" from="VBoxContainer/button1" to="." method="_on_button1_pressed"]
