@@ -43,7 +43,7 @@
      id="namedview3791"
      showgrid="false"
      inkscape:zoom="0.77777778"
-     inkscape:cx="859.78058"
+     inkscape:cx="578.85201"
      inkscape:cy="190.28414"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
@@ -8207,7 +8207,9 @@
   </g>
   <g
      transform="matrix( 1, 0, 0, 1, 0,0) "
-     id="g3467">
+     id="g3467"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90">
     <use
        xlink:href="#Layer0_78_FILL"
        id="use3469" />
@@ -8396,7 +8398,9 @@
   </g>
   <g
      transform="matrix( 1, 0, 0, 1, 0,0) "
-     id="g3575">
+     id="g3575"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90">
     <use
        xlink:href="#Layer0_91_FILL"
        id="use3577" />

@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://scenes/levelmap/level/level.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/level/level_star_0.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/level/level_star_1.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/level/level_star_2.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/level/level_star_3.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/level/level_node.png" type="Texture" id=6]
+
+[node name="level" type="Node2D"]
+
+script/script = ExtResource( 1 )
+level = null
+
+[node name="star0" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, -17 )
+texture = ExtResource( 2 )
+
+[node name="star1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, -17 )
+texture = ExtResource( 3 )
+
+[node name="star2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, -17 )
+texture = ExtResource( 4 )
+
+[node name="star3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, -17 )
+texture = ExtResource( 5 )
+
+[node name="anchor" type="TextureButton" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -19.0
+margin/top = -6.0
+margin/right = 21.0
+margin/bottom = 34.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 6 )
+
+[connection signal="pressed" from="anchor" to="." method="_on_anchor_pressed"]
+
+

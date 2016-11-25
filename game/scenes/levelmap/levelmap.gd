@@ -16,6 +16,15 @@ func _ready():
 	var tilemaputils = get_node("/root/tilemaputils")
 	terrain = tilemaputils.calculate_tilemap_size(get_node("terrain"))
 	camera.set_offset(Vector2(viewport_width / 2, viewport_height / 2))
+	get_node("levels/level1").show()
+	_bind_level_selected()
+	
+func _bind_level_selected():
+	for level in get_node("levels").get_children():
+		level.connect("selected", self, "_level_selected")
+		
+func _level_selected(level):
+	print("level selected: ", level)
 
 func _process(delta):
 	if (Input.is_key_pressed(KEY_RIGHT)):

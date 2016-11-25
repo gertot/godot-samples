@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://scenes/levelmap/levelmap.gd" type="Script" id=1]
 [ext_resource path="res://assets/tilemap/tileset.tres" type="TileSet" id=2]
+[ext_resource path="res://scenes/levelmap/level/level.tscn" type="PackedScene" id=3]
 
 [node name="levelmap" type="Node2D"]
 
@@ -62,5 +63,22 @@ drag_margin/left = 0.0
 drag_margin/top = 0.0
 drag_margin/right = 0.0
 drag_margin/bottom = 0.0
+
+[node name="levels" type="Node2D" parent="."]
+
+[node name="level1" parent="levels" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 32, 32 )
+level = 1
+
+[node name="level2" parent="levels" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 32, 224 )
+level = 2
+
+[node name="level3" parent="levels" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 224, 224 )
+level = 3
 
 
