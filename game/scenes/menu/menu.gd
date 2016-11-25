@@ -12,6 +12,7 @@ func _ready():
 
 func _on_button1_pressed():
 	print("Button 1 pressed")
+	get_node("/root/global").setScene("levelmap")
 
 
 func _on_button2_pressed():
